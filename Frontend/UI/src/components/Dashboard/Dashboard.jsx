@@ -1,8 +1,14 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import '../Dashboard/Dashboard.css';
 import { handleError, handleSuccess } from '../utils/utils';
-import axiosInstance from '../utils/axiosInstance'; // ✅ import custom axios
+import axiosInstance from '../utils/axiosInstance';
+
+import AddIcon from '@mui/icons-material/Add';
+import HomeIcon from '@mui/icons-material/Home';
+import LogoutIcon from '@mui/icons-material/Logout';
+import EditIcon from '@mui/icons-material/Edit';
+import DeleteIcon from '@mui/icons-material/Delete';
 
 function Dashboard({ isSuccess, setIsSuccess }) {
   const [events, setEvents] = useState([]);
@@ -12,6 +18,7 @@ function Dashboard({ isSuccess, setIsSuccess }) {
     location: '',
     date: '',
   });
+  const navigate = useNavigate();
 
   useEffect(() => {
     axiosInstance
@@ -47,7 +54,7 @@ function Dashboard({ isSuccess, setIsSuccess }) {
       .then(() => {
         handleSuccess('Event created successfully!');
         setFormData({ title: '', description: '', location: '', date: '' });
-        setIsSuccess(prev => !prev);
+        setIsSuccess((prev) => !prev);
         toggleModal(false);
       })
       .catch(() => {
@@ -63,12 +70,24 @@ function Dashboard({ isSuccess, setIsSuccess }) {
       .delete(`/events/${id}`)
       .then(() => {
         handleSuccess('Event deleted successfully!');
-        setIsSuccess(prev => !prev);
+        setIsSuccess((prev) => !prev);
       })
       .catch(() => {
         handleError('Failed to delete event.');
         setIsSuccess(false);
       });
+  };
+
+  const handleLogout = async () => {
+    try {
+      localStorage.removeItem('token');
+      localStorage.removeItem('user');
+      handleSuccess('Logged out successfully!');
+      navigate('/login');
+    } catch (err) {
+      console.error('Logout error:', err);
+      handleError('Failed to log out.');
+    }
   };
 
   return (
@@ -77,13 +96,17 @@ function Dashboard({ isSuccess, setIsSuccess }) {
         <h2 className="dashboard-title">Event Tracker Dashboard</h2>
         <div className="header-actions">
           <button className="btn btn-add" onClick={() => toggleModal(true)}>
-            Add Event
+            <AddIcon style={{ marginRight: '6px' }} /> Add Event
           </button>
           <Link to="/home" className="btn btn-home">
-            Home
+            <HomeIcon style={{ marginRight: '6px' }} /> Home
           </Link>
+          <button className="btn btn-logout" onClick={handleLogout}>
+            <LogoutIcon style={{ marginRight: '6px' }} /> Logout
+          </button>
         </div>
       </header>
+
       <div className="dashboard-card">
         <div className="events-grid">
           {events?.length > 0 ? (
@@ -93,13 +116,13 @@ function Dashboard({ isSuccess, setIsSuccess }) {
                 <p className="event-date">{new Date(event.date).toLocaleDateString()}</p>
                 <div className="event-actions">
                   <Link className="btn btn-update" to={`/update/${event._id}`}>
-                    Update
+                    <EditIcon style={{ marginRight: '4px' }} /> Update
                   </Link>
                   <button
                     onClick={() => handleDelete(event._id)}
                     className="btn btn-delete"
                   >
-                     Delete ❎
+                    <DeleteIcon style={{ marginRight: '4px' }} /> Delete
                   </button>
                 </div>
               </div>
@@ -122,7 +145,9 @@ function Dashboard({ isSuccess, setIsSuccess }) {
               <form onSubmit={handleSubmit}>
                 {['title', 'description', 'location', 'date'].map((field) => (
                   <div className="form-group" key={field}>
-                    <label htmlFor={field}>{field.charAt(0).toUpperCase() + field.slice(1)}</label>
+                    <label htmlFor={field}>
+                      {field.charAt(0).toUpperCase() + field.slice(1)}
+                    </label>
                     <input
                       onChange={handleInputChange}
                       value={formData[field]}
@@ -135,7 +160,9 @@ function Dashboard({ isSuccess, setIsSuccess }) {
                     />
                   </div>
                 ))}
-                <button type="submit" className="btn btn-add">Add Event</button>
+                <button type="submit" className="btn btn-add">
+                  <AddIcon style={{ marginRight: '6px' }} /> Add Event
+                </button>
               </form>
             </div>
           </div>
