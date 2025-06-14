@@ -1,9 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react';
+import Dashboard from './components/Dashboard/Dashboard';
+import './App.css';
 
-const App = () => {
+function App() {
+  const [isSuccess, setIsSuccess] = useState(false);
+
   return (
-    <div>App</div>
-  )
+    <div className="app">
+  
+      <Dashboard isSuccess={isSuccess} setIsSuccess={setIsSuccess} />
+    </div>
+  );
 }
 
-export default App
+export default App;
+
+
