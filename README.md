@@ -57,7 +57,7 @@ npm start
 ## 📸 Screenshots
 
 ### 🏠 Home Page  
-![Home Page](https://github.com/Suhail-Ahmed7/Event-Tracker/blob/b14bdbf78a701f5d0e6f0732cbe8b9db366686ff/home%20page.png)
+![image alt](https://github.com/Suhail-Ahmed7/Event-Tracker/blob/b14bdbf78a701f5d0e6f0732cbe8b9db366686ff/home%20page.png)
 
 ### 🔐 Login Page  
 ![Login Page](login page.png)
