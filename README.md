@@ -54,4 +54,4 @@ npm install
 npm start
 
 
-![add new event!](Screenshots\add_new_event.png)
+![login!](Screenshots\login page.png)
