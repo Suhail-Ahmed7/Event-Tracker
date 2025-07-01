@@ -33,7 +33,9 @@ A fully functional **MERN stack application** (MongoDB, Express, React, Node.js)
 - Joi for data validation  
 - dotenv for environment variables
 
+## 🔗 Live Demo
 
+👉 [**Event Tracker Live App**](https://event-tracker-mauve.vercel.app)
 
 
 ## 🔧 Installation & Setup
