@@ -53,4 +53,7 @@ cd ../frontend/UI
 npm install
 npm start
 
+## 📸 Screenshots
+
+### 🔐 Login Page  
 ![Login Page](https://raw.githubusercontent.com/Suhail-Ahmed7/Event-Tracker/main/Screenshots/login_page.png)
