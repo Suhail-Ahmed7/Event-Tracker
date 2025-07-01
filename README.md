@@ -52,3 +52,9 @@ npm install
 cd ../frontend/UI
 npm install
 npm start
+
+## 📸 Screenshots
+
+### 🏠 Home Page  
+![Home Page]([https://raw.githubusercontent.com/Suhail-Ahmed7/Event-Tracker/main/home%20page.png](https://github.com/Suhail-Ahmed7/Event-Tracker/blob/e490f36d97dcfb059cafdd69c2ddbc2cd4c35e9b/Screenshots/home%20page.png))
+
