@@ -54,6 +54,4 @@ npm install
 npm start
 
 ## 📸 Screenshots
-
-
-![login](Screenshots/login%20page.png)
+![login](https://raw.githubusercontent.com/Suhail-Ahmed7/Event-Tracker/main/Screenshots/login%20page.png)
