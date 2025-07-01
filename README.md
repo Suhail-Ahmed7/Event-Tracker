@@ -57,4 +57,3 @@ npm start
 
 ### 🏠 Home Page  
 ![Home Page](https://raw.githubusercontent.com/Suhail-Ahmed7/Event-Tracker/main/Screenshots/home%20page.png)
-
