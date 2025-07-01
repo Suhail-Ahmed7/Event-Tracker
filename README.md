@@ -52,3 +52,27 @@ npm install
 cd ../frontend/UI
 npm install
 npm start
+
+
+## 📸 Screenshots
+
+### 🏠 Home Page  
+![Home Page](home page.png)
+
+### 🔐 Login Page  
+![Login Page](login page.png)
+
+### 🔐 Login Page (Alternate)  
+![Login Page 1](login page1.png)
+
+### 🧾 Signup Page  
+![Signup Page](Signp page.png)
+
+### 🆕 Add New Event  
+![Add New Event](add new event.png)
+
+### 📋 Dashboard  
+![Dashboard Page](dashboard page.png)
+
+### 🔁 Update Event  
+![Update Page](update page.png)
