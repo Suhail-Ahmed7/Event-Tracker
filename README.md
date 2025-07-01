@@ -57,22 +57,22 @@ npm start
 ## 📸 Screenshots
 
 ### 🏠 Home Page  
-![Home Page](https://github.com/Suhail-Ahmed7/Event-Tracker/raw/main/home%20page.png)
+![Home Page](https://raw.githubusercontent.com/Suhail-Ahmed7/Event-Tracker/main/home%20page.png)
 
 ### 🔐 Login Page  
-![Login Page](https://github.com/Suhail-Ahmed7/Event-Tracker/raw/main/login%20page.png)
+![Login Page](https://raw.githubusercontent.com/Suhail-Ahmed7/Event-Tracker/main/login%20page.png)
 
 ### 🔐 Login Page (Alternate)  
-![Login Page 1](https://github.com/Suhail-Ahmed7/Event-Tracker/raw/main/login%20page1.png)
+![Login Page 1](https://raw.githubusercontent.com/Suhail-Ahmed7/Event-Tracker/main/login%20page1.png)
 
 ### 🧾 Signup Page  
-![Signup Page](https://github.com/Suhail-Ahmed7/Event-Tracker/raw/main/Signp%20page.png)
+![Signup Page](https://raw.githubusercontent.com/Suhail-Ahmed7/Event-Tracker/main/Signp%20page.png)
 
 ### 🆕 Add New Event  
-![Add New Event](https://github.com/Suhail-Ahmed7/Event-Tracker/raw/main/add%20new%20event.png)
+![Add New Event](https://raw.githubusercontent.com/Suhail-Ahmed7/Event-Tracker/main/add%20new%20event.png)
 
 ### 📋 Dashboard  
-![Dashboard Page](https://github.com/Suhail-Ahmed7/Event-Tracker/raw/main/dashboard%20page.png)
+![Dashboard Page](https://raw.githubusercontent.com/Suhail-Ahmed7/Event-Tracker/main/dashboard%20page.png)
 
 ### 🔁 Update Event  
-![Update Page](https://github.com/Suhail-Ahmed7/Event-Tracker/raw/main/update%20page.png)
+![Update Page](https://raw.githubusercontent.com/Suhail-Ahmed7/Event-Tracker/main/update%20page.png)
