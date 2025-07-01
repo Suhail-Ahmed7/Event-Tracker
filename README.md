@@ -54,5 +54,4 @@ npm install
 npm start
 
 ## 📸 Screenshots
-![Login Page](Screenshots/login_page.png)
-
+(![Image](https://github.com/user-attachments/assets/99f94196-e7ac-48ed-8a73-0de119e73f5d))
