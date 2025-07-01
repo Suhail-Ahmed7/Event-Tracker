@@ -66,7 +66,7 @@ npm start
 ![Login Page 1](login page1.png)
 
 ### 🧾 Signup Page  
-![Signup Page](Signp page.png)
+![Signup Page]([Signp page.png](https://github.com/Suhail-Ahmed7/Event-Tracker/blob/main/Signp%20page.png))
 
 ### 🆕 Add New Event  
 ![Add New Event](add new event.png)
