@@ -9,14 +9,15 @@ const connectDB = require('./config/dbConnection');
 dotenv.config();
 connectDB();
 
-// ✅ Recommended CORS Options
 const corsOptions = {
-  origin: 'http://localhost:5173', // Replace or add frontend URLs as needed
-  credentials: true, // Allow cookies, authorization headers, etc.
-  
+  origin: [
+    'http://localhost:5173',
+    'https://event-tracker-mauve.vercel.app', 
+  ],
+  credentials: true,
 };
 
-app.use(cors(corsOptions)); // ✅ Secure CORS with options
+app.use(cors(corsOptions)); 
 app.use(express.json());
 
 app.use('/auth', AuthRouter);
