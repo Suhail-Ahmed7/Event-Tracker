@@ -52,3 +52,6 @@ npm install
 cd ../frontend/UI
 npm install
 npm start
+
+
+![add new event!](Screenshots\add_new_event.png)
